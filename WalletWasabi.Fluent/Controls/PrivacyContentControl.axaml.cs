@@ -99,7 +99,6 @@ public class PrivacyContentControl : ContentControl
 
 		PrivacyText = new string(Enumerable.Repeat(PrivacyChar, (int)NumberOfPrivacyChars).ToArray());
 	}
-
 	protected override void OnDetachedFromVisualTree(VisualTreeAttachmentEventArgs e)
 	{
 		base.OnDetachedFromVisualTree(e);

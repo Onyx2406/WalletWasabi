@@ -252,6 +252,7 @@ public class TagsBox : TemplatedControl
 			.Subscribe(_ =>
 			{
 				var correctedInput = CurrentText.ParseLabel();
+	
 				InvalidateWatermark();
 				if (RestrictInputToSuggestions && Suggestions is { } suggestions)
 				{
@@ -264,7 +265,6 @@ public class TagsBox : TemplatedControl
 					IsCurrentTextValid = !string.IsNullOrEmpty(correctedInput);
 					return;
 				}
-				
 			})
 			.DisposeWith(_compositeDisposable);
 	}
