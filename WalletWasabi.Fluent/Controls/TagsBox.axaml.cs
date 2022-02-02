@@ -285,7 +285,7 @@ public class TagsBox : TemplatedControl
 			return;
 		}
 
-		throw new InvalidOperationException($"Invalid configuration! {nameof(Suggestions)} are not set!");
+		IsCurrentTextValid = false;
 	}
 
 	private void OnKeyDown(object? sender, KeyEventArgs e)
