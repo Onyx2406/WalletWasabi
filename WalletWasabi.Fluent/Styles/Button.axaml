@@ -85,7 +85,7 @@
   <Style Selector="Button.labelFlyout /template/ ContentPresenter">
     <Setter Property="Cursor" Value="Hand" />
     <Setter Property="BorderThickness" Value="1" />
-    <Setter Property="BorderBrush" Value="{StaticResource TagsBoxBorderBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource TagsBoxBorderBrush}" />
     <Setter Property="Background" Value="{DynamicResource InvisibleButtonBackgroundColor}" />
     <Setter Property="CornerRadius" Value="2" />
   </Style>
